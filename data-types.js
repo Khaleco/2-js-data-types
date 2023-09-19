@@ -86,7 +86,7 @@ console.log("My name is Khale and I am", 10 + 9, "years old.");
 
 /* 
     ? String Methods
-    * .lenght
+    * .lenghh
     * slice()
     * .toUpperCase()
     * .toLowerCase()

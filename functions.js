@@ -130,3 +130,40 @@ console.log(concatenteStr("Khale", "Coffran"));
 (function() {
     console.log("IIFE");
 })();
+
+/*
+    ! Pythagoream Theorem Challenge
+    * right angle triangle has three sides
+    * the longest side c is calculated by taking the sum of:
+    * a**2 + b**2
+    * the formula is as follows c = sqrt(a**2 + b**2)
+    * Create a function that takes the two triangle sides
+    * Returns the hypothenuse
+    * Use a block body arrow function
+*/
+
+let pythagTheorem = (side1, side2, side3) => {
+
+    const numCheck = side1 + side2 +side3;
+
+    if (side1 == 0 && typeof(numCheck) == "number"){
+        let a = Math.sqrt(side3**2 - side2**2);
+        return `Side 1 is : ${a}`;
+    } else if (side2 == 0 && typeof(numCheck) == "number"){
+        let b = Math.sqrt(side3**2 - side1**2);
+        return `Side 2 is : ${b}`;
+    } else if (side3 == 0 && typeof(numCheck) == "number"){
+        let c = Math.sqrt(side1**2 + side2**2);
+        return `The hypothenuse is: ${c}`;
+    } else {
+        return "Invalid input, Please use numbers (a, b, c), for unkown enter 0";
+    }
+}
+
+console.log(pythagTheorem(3, 4, 0));
+
+/* 
+    TODO: HINT - Ternaries are expressions, not statments
+    * they need to be "caught" in their entirety into a seperate placeholder (variable)
+    *then that variable can be returned for the function to return something other than undefined
+*/

@@ -29,6 +29,10 @@ function fizzBuzz(start, stop){
         }
         start++;
     }
+    return "End";
 }
 
 fizzBuzz(15,30);
+fizzBuzz(10,20);
+
+module.exports = fizzBuzz;
